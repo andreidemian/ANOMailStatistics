@@ -33,11 +33,11 @@ Installing:
 </connection>
 ```
   
-- **3. Perl modules list**  
-  - perl-Parallel-ForkManager  
-  - perl-XML-Simple  
-  - perl-Data-Uniqid  
-  - perl-Mail-POP3Client  
+3.**Perl modules list**  
+  3.1 perl-Parallel-ForkManager  
+  3.2 perl-XML-Simple  
+  3.3 perl-Data-Uniqid  
+  3.4 perl-Mail-POP3Client  
   
 <p><b>4.PHP modules list</b></p>
 <p>  * php-mysql</p>
