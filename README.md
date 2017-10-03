@@ -1,6 +1,6 @@
 # ANO Mail Statistics
 
-<p><b> 
+----------
   ANO Mail Statistics is an web based tool for postfix log analysis, bounce analysis and also generates charts based on the colected data.
 
    Details:
@@ -8,7 +8,7 @@
       2. Bounced Pie Chart with detailed number of bounces per error code
       3. Bounced list with all the emails and error messages, search filters and an export to cvs option
       4. Detailed postfix log with search filters and export to cvs option
-</p></b>
+-----------
 
 <p><b>1. Import database</b></p>
 
