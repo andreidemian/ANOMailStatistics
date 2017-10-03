@@ -17,7 +17,8 @@
 <br>
 <p><b>5. ANO TYPE LOG &ensp; -- &ensp; vi /etc/rsyslog.conf and add this lines </b></p>
 <p>  * add this template:</p>
-    ```template(name="FileFormat" type="string" option.sql="on" string="datetime=%timestamp:::date-mysql%, hostname=%HOSTNAME%, syslogtag=%syslogtag%%msg:::sp-if-no-1st-sp%%msg:::drop-last-lf%\n")```
+    ```template(name="FileFormat" type="string" option.sql="on" string="datetime=%timestamp:::date-mysql%, hostname=%HOSTNAME%, syslogtag=%syslogtag%%msg:::sp-if-no-1st-sp%%msg:::drop-last-lf%\n")
+    ```
 <p>  * apply the template to the mail log like this : &ensp;&ensp; mail.* -/var/log/mail;FileFormat
 <br>
 <br>
