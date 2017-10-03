@@ -1,4 +1,4 @@
-# ANO
+# ANO Mail Statistics
 
 <p><b>1. Import database</b></p>
  <p> * mysql -u root -p postfix_log < postfix_log.sql</p>
