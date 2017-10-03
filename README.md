@@ -1,13 +1,23 @@
 # ANO Mail Statistics
 
-----------
+<p align="center">
+  <p><b>Delivery Charts</b></p>
+  <img src="https://user-images.githubusercontent.com/17200386/31127113-98df95b4-a856-11e7-937b-966b656566b4.png" width="350"/>
+  <br>
+  <br>
+  <p><b>Bounced Pie Charts</b></p>
+  <img src="https://user-images.githubusercontent.com/17200386/31127468-add99fae-a857-11e7-98c6-2fd63efdd4ec.png" width="350"/>
+</p>
+
   ANO Mail Statistics is an web based tool for postfix log analysis, bounce analysis and also generates charts based on the colected data.
 
    Details:
-      1. Delivery charts for Sent, Receive, Deferred and Bounced 
-      2. Bounced Pie Chart with detailed number of bounces per error code
-      3. Bounced list with all the emails and error messages, search filters and an export to cvs option
-      4. Detailed postfix log with search filters and export to cvs option
+      1. Delivery charts for Sent, Receive, Deferred and Bounced.
+      2. Bounced Pie Chart with detailed number of bounces per error code.
+      3. Bounced list with all the emails and error messages, search filters and an export to cvs option.
+      4. Detailed postfix log with search filters and export to cvs option.
+
+Installing:
 -----------
 
 <p><b>1. Import database</b></p>
@@ -60,12 +70,3 @@
 
 <br>
 <br>
-
-<p align="center">
-  <p><b>Delivery Charts</b></p>
-  <img src="https://user-images.githubusercontent.com/17200386/31127113-98df95b4-a856-11e7-937b-966b656566b4.png" width="350"/>
-  <br>
-  <br>
-  <p><b>Bounced Pie Charts</b></p>
-  <img src="https://user-images.githubusercontent.com/17200386/31127468-add99fae-a857-11e7-98c6-2fd63efdd4ec.png" width="350"/>
-</p>
