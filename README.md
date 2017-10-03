@@ -1,7 +1,11 @@
 # ANO Mail Statistics
 
 <p><b>1. Import database</b></p>
- <p> * mysql -u root -p postfix_log < postfix_log.sql</p>
+
+```
+  mysql -u root -p postfix_log < postfix_log.sql
+```
+
 <br>
 <p><b>2. edit the DB/db.xml file with the credentials for db access</b></p>
 
