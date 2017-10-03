@@ -15,15 +15,14 @@
 Installing:
 -----------
 
-<p><b>1. Import database</b></p>
+**1. Import database**  
 
 ```
   mysql -u root -p postfix_log < postfix_log.sql
 ```
-
-<br>
-<p><b>2. edit the DB/db.xml file with the credentials for db access</b></p>
-
+  
+**2. edit the DB/db.xml file with the credentials for db access**  
+  
 ```
 <connection>
 	<port>3306</port>
@@ -33,17 +32,13 @@ Installing:
 	<db>postfix_log</db>
 </connection>
 ```
-
-<br>
-
-<p><b>3. Perl modules list</b></p>
-<p>  * perl-Parallel-ForkManager</p>
-<p>  * perl-XML-Simple</p>
-<p>  * perl-Data-Uniqid</p>
-<p>  * perl-Mail-POP3Client</p>
-
-<br>
-
+  
+- **3. Perl modules list**  
+  - perl-Parallel-ForkManager  
+  - perl-XML-Simple  
+  - perl-Data-Uniqid  
+  - perl-Mail-POP3Client  
+  
 <p><b>4.PHP modules list</b></p>
 <p>  * php-mysql</p>
 <p>  * php-xml</p>
