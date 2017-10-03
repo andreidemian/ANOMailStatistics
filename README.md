@@ -5,6 +5,7 @@
 <br>
 <p><b>2. edit the DB/db.xml file with the credentials for db access</b></p>
 
+```
 <connection>
 	<port>3306</port>
 	<host>localhost</host>
@@ -12,6 +13,7 @@
 	<password>password</password>
 	<db>postfix_log</db>
 </connection>
+```
 
 <br>
 <p><b>3. Perl modules list</b></p>
