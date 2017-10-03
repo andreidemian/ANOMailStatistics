@@ -1,9 +1,9 @@
 # ANO
 
 <p><b>1. Import database</b></p>
-  mysql -u root -p postfix_log < postfix_log.sql<br>
+ <p> * mysql -u root -p postfix_log < postfix_log.sql</p>
 <br>
-2. edit the DB/db.xml file with the credentials for db access<br>
+<p><b>2. edit the DB/db.xml file with the credentials for db access</b></p>
 <br>
 <p><b>3. Perl modules list</b></p>
 <p>  * perl-Parallel-ForkManager</p>
@@ -13,7 +13,7 @@
 <br>
 <p><b>4.PHP modules list</b></p>
 <p>  * php-mysql</p>
-<p>  * php</p>
+<p>  * php-xml</p>
 <br>
 <p><b>5. ANO TYPE LOG &ensp; -- &ensp; vi /etc/rsyslog.conf and add this lines </b></p>
 <p>  * add this template: &ensp;&ensp; template(name="FileFormat" type="string" option.sql="on" string="datetime=%timestamp:::date-mysql%, hostname=%HOSTNAME%, syslogtag=%syslogtag%%msg:::sp-if-no-1st-sp%%msg:::drop-last-lf%\n") </p>
