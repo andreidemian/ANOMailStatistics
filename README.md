@@ -16,3 +16,4 @@
 <p>  * add this template: &ensp;&ensp; template(name="FileFormat" type="string" option.sql="on" string="datetime=%timestamp:::date-mysql%, hostname=%HOSTNAME%, syslogtag=%syslogtag%%msg:::sp-if-no-1st-sp%%msg:::drop-last-lf%\n") </p>
 <p>  * apply the template to the mail log like this : &ensp;&ensp; mail.* -/var/log/mail;FileFormat
 <br>
+![anoms1](https://user-images.githubusercontent.com/17200386/31122990-bfe772b8-a846-11e7-8532-e7f81e896fb5.png)
