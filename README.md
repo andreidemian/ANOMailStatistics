@@ -12,7 +12,11 @@
 <p>  * perl-Data-Uniqid</p>
 <p>  * perl-Mail-POP3Client</p>
 <br>
-<p><b>4. ANO TYPE LOG &ensp; -- &ensp; vi /etc/rsyslog.conf and add this lines </b></p>
+<p><b>4.PHP modules list</b></p>
+<p>  * php-mysql</p>
+<p>  * php</p>
+<br>
+<p><b>5. ANO TYPE LOG &ensp; -- &ensp; vi /etc/rsyslog.conf and add this lines </b></p>
 <p>  * add this template: &ensp;&ensp; template(name="FileFormat" type="string" option.sql="on" string="datetime=%timestamp:::date-mysql%, hostname=%HOSTNAME%, syslogtag=%syslogtag%%msg:::sp-if-no-1st-sp%%msg:::drop-last-lf%\n") </p>
 <p>  * apply the template to the mail log like this : &ensp;&ensp; mail.* -/var/log/mail;FileFormat
 <br>
