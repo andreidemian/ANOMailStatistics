@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<connection>
+	<port>3306</port>
+	<host>localhost</host>
+	<user>user</user>
+	<password>password</password>
+	<db>postfix_log</db>
+</connection>
