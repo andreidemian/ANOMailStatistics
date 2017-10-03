@@ -1,7 +1,6 @@
 # ANO
 
-1. Import database<br>
-<br>
+<p><b>1. Import database</b></p>
   mysql -u root -p postfix_log < postfix_log.sql<br>
 <br>
 2. edit the DB/db.xml file with the credentials for db access<br>
