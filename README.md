@@ -25,6 +25,7 @@
 <br>
 
 <p>  * apply the template to the mail log like this :</p> 
+
     ```
     mail.* -/var/log/mail;FileFormat
     ```
