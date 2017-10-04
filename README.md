@@ -24,6 +24,10 @@
   
 ![screenshot](https://user-images.githubusercontent.com/17200386/31162954-bc9e4b52-a8e8-11e7-8f58-c2ce7b80bbee.png)  
 
+**Bounce Pie Chart with detaild number of bounces per error code**
+  
+![screenshot](https://user-images.githubusercontent.com/17200386/31162956-bcaf636a-a8e8-11e7-98d6-16aa99633402.png)
+
 -----------  
 
   ANO Mail Statistics is an web based tool for postfix log analysis, bounce analysis and also generates charts based on the colected data.  
