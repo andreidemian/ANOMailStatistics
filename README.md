@@ -12,6 +12,18 @@
   
 ![screenshot](https://user-images.githubusercontent.com/17200386/31162923-8ba5c1b0-a8e8-11e7-848c-374afaf81ee4.png)  
 
+**Bounce list**
+  
+![screenshot](https://user-images.githubusercontent.com/17200386/31162921-8ba4168a-a8e8-11e7-888f-fe54e5021363.png)  
+
+**Bounce list Details**
+  
+![screenshot](https://user-images.githubusercontent.com/17200386/31162922-8ba43840-a8e8-11e7-9226-c7c771882b51.png)  
+
+**Delivery Charts for Sent, Receive, Deferred and Bounced**
+  
+![screenshot](https://user-images.githubusercontent.com/17200386/31162954-bc9e4b52-a8e8-11e7-8f58-c2ce7b80bbee.png)  
+
 -----------  
 
   ANO Mail Statistics is an web based tool for postfix log analysis, bounce analysis and also generates charts based on the colected data.  
