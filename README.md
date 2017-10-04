@@ -1,8 +1,10 @@
 # ANO Mail Statistics
 
 **Status Page**  
+  
 ![screenshot](https://user-images.githubusercontent.com/17200386/31162925-8ba94556-a8e8-11e7-896d-dfef48812666.png)  
-
+  
+  
 **Mail log list page**  
 ![screenshot](https://user-images.githubusercontent.com/17200386/31162924-8ba5acac-a8e8-11e7-82c9-69d24106a116.png)  
 
