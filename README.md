@@ -41,17 +41,17 @@
 	* php-xml  
 	
 **5. ANO TYPE LOG &ensp; -- &ensp; vi /etc/rsyslog.conf and add this lines**  
-	* add this template:  
+* Add this template:  
 
 ```
    template(name="FileFormat" type="string" option.sql="on" string="datetime=%timestamp:::date-mysql%, hostname=%HOSTNAME%, syslogtag=%syslogtag%%msg:::sp-if-no-1st-sp%%msg:::drop-last-lf%\n")
-```  
+```    
 
-	* Apply the template to the mail log like this:  
+* Apply the template to the mail log like this:  
 	
 ```
     mail.* -/var/log/mail;FileFormat
-```
+```  
   
 -----------
 
