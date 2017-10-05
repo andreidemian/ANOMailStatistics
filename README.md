@@ -31,25 +31,23 @@
 ```
   
 **3. Perl at least version v5.10.1**  
-     - perl-Parallel-ForkManager  
-     - perl-XML-Simple  
-     - perl-Data-Uniqid  
-     - perl-Mail-POP3Client  
+	* perl-Parallel-ForkManager  
+	* perl-XML-Simple  
+	* perl-Data-Uniqid  
+	* perl-Mail-POP3Client  
   
-<p><b>4.PHP modules list</b></p>
-<p>  * php-mysql</p>
-<p>  * php-xml</p>
-<br>
-<p><b>5. ANO TYPE LOG &ensp; -- &ensp; vi /etc/rsyslog.conf and add this lines </b></p>
-<p>  * add this template:</p>
+**4. PHP modules list**
+	* php-mysql  
+	* php-xml  
+	
+**5. ANO TYPE LOG &ensp; -- &ensp; vi /etc/rsyslog.conf and add this lines**  
+	* add this template:  
 
-   ```
+```
    template(name="FileFormat" type="string" option.sql="on" string="datetime=%timestamp:::date-mysql%, hostname=%HOSTNAME%, syslogtag=%syslogtag%%msg:::sp-if-no-1st-sp%%msg:::drop-last-lf%\n")
-   ```
-   
-<br>
+```
 
-<p>  * apply the template to the mail log like this :</p>
+	* apply the template to the mail log like this :
 
 ```
     mail.* -/var/log/mail;FileFormat
