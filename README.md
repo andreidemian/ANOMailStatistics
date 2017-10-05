@@ -60,10 +60,10 @@ Installing:
 ```
   
 **3. Perl at least version v5.10.1**  
-     * perl-Parallel-ForkManager  
-     * perl-XML-Simple  
-     * perl-Data-Uniqid  
-     * perl-Mail-POP3Client  
+     - * perl-Parallel-ForkManager  
+     - * perl-XML-Simple  
+     - * perl-Data-Uniqid  
+     - * perl-Mail-POP3Client  
   
 <p><b>4.PHP modules list</b></p>
 <p>  * php-mysql</p>
