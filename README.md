@@ -47,8 +47,8 @@
    template(name="FileFormat" type="string" option.sql="on" string="datetime=%timestamp:::date-mysql%, hostname=%HOSTNAME%, syslogtag=%syslogtag%%msg:::sp-if-no-1st-sp%%msg:::drop-last-lf%\n")
 ```
 
-	* apply the template to the mail log like this :
-
+	* apply the template to the mail log like this :  
+	
 ```
     mail.* -/var/log/mail;FileFormat
 ```
