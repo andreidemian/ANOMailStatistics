@@ -36,8 +36,8 @@
 	* perl-Data-Uniqid  
 	* perl-Mail-POP3Client  
   
-**4. PHP modules list**
-	* php-mysql  
+**4. PHP modules list**  
+	* php-mysql   
 	* php-xml  
 	
 **5. ANO TYPE LOG &ensp; -- &ensp; vi /etc/rsyslog.conf and add this lines**  
