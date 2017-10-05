@@ -7,44 +7,9 @@
    * Bounced Pie Chart with detailed number of bounces per error code.  
    * Bounced list with all the emails and error messages, search filters and an export to cvs option.  
    * Detailed postfix log with search filters and export to cvs option.  
- -----------
-
-**Status Page**  
-  
-![screenshot](https://user-images.githubusercontent.com/17200386/31162925-8ba94556-a8e8-11e7-896d-dfef48812666.png)  
------------
-
-**Mail log list page**  
-  
-![screenshot](https://user-images.githubusercontent.com/17200386/31162924-8ba5acac-a8e8-11e7-82c9-69d24106a116.png)  
------------
-
-**Mail Log Details**  
-  
-![screenshot](https://user-images.githubusercontent.com/17200386/31162923-8ba5c1b0-a8e8-11e7-848c-374afaf81ee4.png)  
------------
-
-**Bounce list**
-  
-![screenshot](https://user-images.githubusercontent.com/17200386/31162921-8ba4168a-a8e8-11e7-888f-fe54e5021363.png)  
------------
-
-**Bounce list Details**
-  
-![screenshot](https://user-images.githubusercontent.com/17200386/31162922-8ba43840-a8e8-11e7-9226-c7c771882b51.png)  
------------
-
-**Delivery Charts for Sent, Receive, Deferred and Bounced**
-  
-![screenshot](https://user-images.githubusercontent.com/17200386/31162954-bc9e4b52-a8e8-11e7-8f58-c2ce7b80bbee.png)  
------------
-
-**Bounce Pie Chart with detaild number of bounces per error code**
-  
-![screenshot](https://user-images.githubusercontent.com/17200386/31162956-bcaf636a-a8e8-11e7-98d6-16aa99633402.png)
------------  
-
-Installing:
+ -----------  
+ 
+ Installing:
 -----------
 
 **1. Import database**  
@@ -89,6 +54,39 @@ Installing:
 ```
     mail.* -/var/log/mail;FileFormat
 ```
+-----------
 
-<br>
-<br>
+**Status Page**  
+  
+![screenshot](https://user-images.githubusercontent.com/17200386/31162925-8ba94556-a8e8-11e7-896d-dfef48812666.png)  
+-----------
+
+**Mail log list page**  
+  
+![screenshot](https://user-images.githubusercontent.com/17200386/31162924-8ba5acac-a8e8-11e7-82c9-69d24106a116.png)  
+-----------
+
+**Mail Log Details**  
+  
+![screenshot](https://user-images.githubusercontent.com/17200386/31162923-8ba5c1b0-a8e8-11e7-848c-374afaf81ee4.png)  
+-----------
+
+**Bounce list**
+  
+![screenshot](https://user-images.githubusercontent.com/17200386/31162921-8ba4168a-a8e8-11e7-888f-fe54e5021363.png)  
+-----------
+
+**Bounce list Details**
+  
+![screenshot](https://user-images.githubusercontent.com/17200386/31162922-8ba43840-a8e8-11e7-9226-c7c771882b51.png)  
+-----------
+
+**Delivery Charts for Sent, Receive, Deferred and Bounced**
+  
+![screenshot](https://user-images.githubusercontent.com/17200386/31162954-bc9e4b52-a8e8-11e7-8f58-c2ce7b80bbee.png)  
+-----------
+
+**Bounce Pie Chart with detaild number of bounces per error code**
+  
+![screenshot](https://user-images.githubusercontent.com/17200386/31162956-bcaf636a-a8e8-11e7-98d6-16aa99633402.png)
+-----------  
