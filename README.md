@@ -31,14 +31,14 @@
 ```
   
 **3. Perl at least version v5.10.1**  
-	* perl-Parallel-ForkManager  
-	* perl-XML-Simple  
-	* perl-Data-Uniqid  
-	* perl-Mail-POP3Client  
+* perl-Parallel-ForkManager  
+* perl-XML-Simple  
+* perl-Data-Uniqid  
+* perl-Mail-POP3Client  
   
 **4. php at least version v5.3.3**  
-	* php-mysql   
-	* php-xml  
+* php-mysql   
+* php-xml  
 	
 **5. ANO TYPE LOG &ensp; -- &ensp; vi /etc/rsyslog.conf and add this lines**  
 * Add this template:  
