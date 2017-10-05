@@ -36,7 +36,7 @@
 	* perl-Data-Uniqid  
 	* perl-Mail-POP3Client  
   
-**4. PHP modules list**  
+**4. php at least version v5.3.3**  
 	* php-mysql   
 	* php-xml  
 	
