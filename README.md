@@ -9,7 +9,7 @@
    * Detailed postfix log with search filters and export to cvs option.  
  -----------  
  
- Installing:
+Installation Prerequisites and Requirements:
 -----------
   
 **1. Perl at least version v5.10.1**  
