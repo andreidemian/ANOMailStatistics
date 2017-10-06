@@ -53,8 +53,29 @@
  chmod 640 /ANOMailoptStatistics/WEB/lib/*
 ```
 
+**6. Apache Config**  
+* vi /etc/httpd/conf.d/ano.conf  
+```
+Alias "/ano" "/opt/ANOMailStatistics/WEB"
 
-**6. ANO TYPE LOG -- vi /etc/rsyslog.conf and add this lines**  
+<Directory "/opt/ANOMailStatistics/WEB">
+   AllowOverride None
+   AuthName "ANO Mail Statistics"
+   AuthType Basic
+   AuthUserFile /etc/httpd/anopass
+   Require valid-user
+</Directory>
+
+<Directory "/opt/ANOMailStatistics/WEB/lib">
+   Require all denied
+</Directory>
+```
+* Set user and password for Apache auth  
+```
+htpasswd -c /etc/httpd/anopass bob
+```
+
+**7. ANO TYPE LOG -- vi /etc/rsyslog.conf and add this lines**  
 * Add this template:  
 
 ```
