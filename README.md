@@ -11,50 +11,18 @@
  
  Installing:
 -----------
-
-**1. Import database**  
-
-```
-  mysql -u root -p postfix_log < postfix_log.sql
-```
   
-**2. edit the DB/db.xml file with the credentials for db access**  
-  
-```
-<connection>
-	<port>3306</port>
-	<host>localhost</host>
-	<user>user</user>
-	<password>password</password>
-	<db>postfix_log</db>
-</connection>
-```
-  
-**3. Perl at least version v5.10.1**  
+**1. Perl at least version v5.10.1**  
 * perl-Parallel-ForkManager  
 * perl-XML-Simple  
 * perl-Data-Uniqid  
 * perl-Mail-POP3Client  
   
-**4. php at least version v5.3.3**  
+**2. php at least version v5.3.3**  
 * php-mysql   
 * php-xml  
 
-**5. Database setup - mysql or mariadb**
-* Create database  
-```
-mysql --user=user_name --password=your_password
-
-create database postfix_log;
-
-exit
-```
-* Import Database  
-```
-mysql --user=user_name --password=your_password --database=postfix_log < /opt/ANOMailStatistics/DB/postfix_log.sql
-```
-
-**5. Copy ANOMailStatistics to /opt**  
+**3. Copy ANOMailStatistics to /opt**  
 * Copy and set Rights
 ```
  mv ANOMailStatistics /opt/
@@ -67,7 +35,31 @@ mysql --user=user_name --password=your_password --database=postfix_log < /opt/AN
  chmod 640 /ANOMailoptStatistics/WEB/lib/*
 ```
 
-**6. Apache Config**  
+**4. Database setup - mysql or mariadb**
+* Create database  
+```
+mysql --user=user_name --password=your_password
+
+create database postfix_log;
+
+exit
+```
+* Import Database  
+```
+mysql --user=user_name --password=your_password --database=postfix_log < /opt/ANOMailStatistics/DB/postfix_log.sql
+```
+* Edit database config xml "vi /opt/ANOMailStatistics/DB/db.xml"
+```
+<connection>
+	<port>3306</port>
+	<host>localhost</host>
+	<user>user_name</user>
+	<password>your_password</password>
+	<db>postfix_log</db>
+</connection>
+```
+
+**5. Apache Config**  
 * vi /etc/httpd/conf.d/ano.conf  
 ```
 Alias "/ano" "/opt/ANOMailStatistics/WEB"
@@ -89,7 +81,7 @@ Alias "/ano" "/opt/ANOMailStatistics/WEB"
 htpasswd -c /etc/httpd/anopass bob
 ```
 
-**7. ANO TYPE LOG -- vi /etc/rsyslog.conf and add this lines**  
+**6. ANO TYPE LOG -- vi /etc/rsyslog.conf and add this lines**  
 * Add this template:  
 
 ```
