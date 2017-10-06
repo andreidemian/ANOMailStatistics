@@ -40,6 +40,20 @@
 * php-mysql   
 * php-xml  
 
+**5. Database setup - mysql or mariadb**
+* Create database  
+```
+mysql --user=user_name --password=your_password
+
+create database postfix_log;
+
+exit
+```
+* Import Database  
+```
+mysql --user=user_name --password=your_password --database=postfix_log < /opt/ANOMailStatistics/DB/postfix_log.sql
+```
+
 **5. Copy ANOMailStatistics to /opt**  
 * Copy and set Rights
 ```
