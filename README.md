@@ -7,7 +7,13 @@
    * Bounced Pie Chart with detailed number of bounces per error code.  
    * Bounced list with all the emails and error messages, search filters and an export to cvs option.  
    * Detailed postfix log with search filters and export to cvs option.  
- -----------  
+ ----------- 
+ 
+ANO Mail Statistics Wiki
+
+![WIKI](https://github.com/andreidemian/ANOMailStatistics/wiki)  
+
+-----------
  
 Installation, Prerequisites and Requirements:
 -----------
