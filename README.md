@@ -39,8 +39,22 @@
 **4. php at least version v5.3.3**  
 * php-mysql   
 * php-xml  
-	
-**5. ANO TYPE LOG &ensp; -- &ensp; vi /etc/rsyslog.conf and add this lines**  
+
+**5. Copy ANOMailStatistics to /opt**  
+* Copy and set Rights
+```
+ mv ANOMailStatistics /opt/
+ 
+ chgrp -R apache /opt/ANOMailStatistics/WEB/uploads
+ chmod 775  /opt/ANOMailStatistics/WEB/uploads
+ 
+ chgrp -R apache /opt/ANOMailStatistics/WEB/lib
+ chmod 750 /ANOMailoptStatistics/WEB/lib
+ chmod 640 /ANOMailoptStatistics/WEB/lib/*
+```
+
+
+**6. ANO TYPE LOG -- vi /etc/rsyslog.conf and add this lines**  
 * Add this template:  
 
 ```
