@@ -12,7 +12,7 @@
 ANO Mail Statistics Wiki
 -----------  
 
-* ![WIKI](https://github.com/andreidemian/ANOMailStatistics/wiki/ANO-Mail-Statistics-Home)  
+* ![WIKI](https://github.com/andreidemian/ANOMailStatistics/wiki)  
   
   
   
@@ -86,6 +86,23 @@ Alias "/ano" "/opt/ANOMailStatistics/WEB"
 * Set user and password for Apache auth  
 ```
 htpasswd -c /etc/httpd/anopass bob
+```
+**6. ANO Mail Statistics Settings**  
+* [Log Parser Settings](https://github.com/andreidemian/ANOMailStatistics/wiki/Log-Config)  
+* [Bounce Parser Settings](https://github.com/andreidemian/ANOMailStatistics/wiki/Bounce-Mail-Box)  
+* [Delivery Chart IN/OUT relays](https://github.com/andreidemian/ANOMailStatistics/wiki/SMTP-IN-OUT)  
+* [Specify Domains](https://github.com/andreidemian/ANOMailStatistics/wiki/Domains)  
+* Start the parser:  
+```
+perl /opt/ANOMailStatistics/GetStats/ano_get.pl start
+```
+* Stop the parser:  
+```
+perl /opt/ANOMailStatistics/GetStats/ano_get.pl stop
+```
+* Parser Status:  
+```
+perl /opt/ANOMailStatistics/GetStats/ano_get.pl status
 ```
   
 -----------
