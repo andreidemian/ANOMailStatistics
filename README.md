@@ -12,7 +12,7 @@
 ANO Mail Statistics Wiki
 -----------  
 
-* ![WIKI](https://github.com/andreidemian/ANOMailStatistics/wiki)  
+* [WIKI](https://github.com/andreidemian/ANOMailStatistics/wiki)  
   
   
   
