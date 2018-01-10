@@ -38,8 +38,8 @@ Installation, Prerequisites and Requirements:
  chmod 775  /opt/ANOMailStatistics/WEB/uploads
  
  chgrp -R apache /opt/ANOMailStatistics/WEB/lib
- chmod 750 /opt/ANOMailoptStatistics/WEB/lib
- chmod 640 /opt/ANOMailoptStatistics/WEB/lib/*
+ chmod 750 /opt/ANOMailStatistics/WEB/lib
+ chmod 640 /opt/ANOMailStatistics/WEB/lib/*
 ```
 
 **4. Database setup - mysql or mariadb**
