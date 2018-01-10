@@ -34,6 +34,9 @@ Installation, Prerequisites and Requirements:
 ```
  mv ANOMailStatistics /opt/
  
+ mkdir /opt/ANOMailStatistics/WEB/uploads
+ mkdir -p /opt/ANOMailStatistics/tmp/pids
+ 
  chgrp -R apache /opt/ANOMailStatistics/WEB/uploads
  chmod 775  /opt/ANOMailStatistics/WEB/uploads
  
