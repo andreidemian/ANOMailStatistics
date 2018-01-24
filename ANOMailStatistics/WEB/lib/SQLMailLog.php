@@ -33,6 +33,7 @@ class SQLMailLog {
 
 	private function AddLog($data) {
 		$logtype;
+		$status = 'off';
 		if($data['logtype1']) {
 			$logtype = $data['logtype1'];
 		}
@@ -51,8 +52,8 @@ class SQLMailLog {
 		}
 
 		$connect = $this->ConnectToDB();
-		$result = $connect->prepare('insert into config_log ( `logrotate`,`log`,`log_description`,`logtype`,`iteration_num`,`R_H`,`R_M`,`R_W`,`del_older_rows`,`del_older_logs`,`active` ) values ( ?,?,?,?,?,?,?,?,?,? );');
-		$result->bind_param('issiiiiiiii',$data['logrotate'],$data['log'],$data['log_des'],$logtype,$data['ITN'],$time[0],$time[1],$data['week'],$data['deldb'],$data['dellog'],$data['active']);
+		$result = $connect->prepare('insert into config_log ( `status`,`logrotate`,`log`,`log_description`,`logtype`,`iteration_num`,`R_H`,`R_M`,`R_W`,`del_older_rows`,`del_older_logs`,`active` ) values ( ?,?,?,?,?,?,?,?,?,?,?,? );');
+		$result->bind_param('sissiiiiiiii',$status,$data['logrotate'],$data['log'],$data['log_des'],$logtype,$data['ITN'],$time[0],$time[1],$data['week'],$data['deldb'],$data['dellog'],$data['active']);
 		$result->execute();
 		$result->close();
 		$connect->close();
