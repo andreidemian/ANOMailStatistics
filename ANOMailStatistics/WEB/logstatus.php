@@ -49,7 +49,8 @@
    	$(document).ready(function(){
    		$('#emailTable').DataTable({
    			//"bFilter": false,
-   			"iDisplayLength": 25
+   			"iDisplayLength": 25,
+   			"order": [3,'desc']
    		});
 	});
 </script>
