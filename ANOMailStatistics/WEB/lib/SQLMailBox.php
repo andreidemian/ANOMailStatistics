@@ -32,6 +32,7 @@ class SQLMailBox {
 	}
 
 	private function AddMailBox($data) {
+		$status = 'off';
 		$connect = $this->ConnectToDB();
 
 		if(empty($data['active'])) {
@@ -42,8 +43,8 @@ class SQLMailBox {
 			$data['ssl'] = 0;
 		}
 
-		$result = $connect->prepare('insert into config_mbb ( `host`,`port`,`ssl`,`account`,`password`,`iteration_num`,`del_older_rows`,`active` ) values ( ?,?,?,?,?,?,?,? );');
-		$result->bind_param('siissiii',$data['host'],$data['port'],$data['ssl'],$data['account'],$data['password'],$data['iteration_num'],$data['deldb'],$data['active']);
+		$result = $connect->prepare('insert into config_mbb ( `status`,`host`,`port`,`ssl`,`account`,`password`,`iteration_num`,`del_older_rows`,`active` ) values ( ?,?,?,?,?,?,?,?,? );');
+		$result->bind_param('ssiissiii',$status,$data['host'],$data['port'],$data['ssl'],$data['account'],$data['password'],$data['iteration_num'],$data['deldb'],$data['active']);
 		$result->execute();
 		$result->close();
 		$connect->close();
