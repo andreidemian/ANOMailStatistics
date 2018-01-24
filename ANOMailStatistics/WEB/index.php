@@ -39,8 +39,8 @@
 	      <a class="navbar-brand" href="index.php">ANO Mail Server Statistics</a>
 	    </div>
 	    <ul class="nav navbar-nav">
-	      <li <?php if($_GET['page'] == 'mlist') { echo 'class="active"'; } ?>><a href="index.php?page=mlist&numOFrows=100&daterange=<?php echo $today;?>+-+<?php echo $today;?>"><span class="fa fa-file-text"></span> MailLog</a></li>
-	      <li <?php if($_GET['page'] == 'mailbox') { echo 'class="active"'; } ?>><a href="index.php?page=mailbox&numOFrows=100&daterange=<?php echo $today;?>+-+<?php echo $today;?>"><span class="fa fa-envelope"></span> Bounced MailBox</a></li>
+	      <li <?php if($_GET['page'] == 'mlist') { echo 'class="active"'; } ?>><a href="index.php?page=mlist&numOFrows=100&daterange=<?php echo $today;?>+-+<?php echo $today;?>&order=1"><span class="fa fa-file-text"></span> MailLog</a></li>
+	      <li <?php if($_GET['page'] == 'mailbox') { echo 'class="active"'; } ?>><a href="index.php?page=mailbox&numOFrows=100&daterange=<?php echo $today;?>+-+<?php echo $today;?>&order=1"><span class="fa fa-envelope"></span> Bounced MailBox</a></li>
 	      <li <?php if(($_GET['page'] == 'stats') || ($_GET['page'] == 'bounced')) { echo 'class="dropdown active"'; } else { echo 'class="dropdown"'; } ?> ><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-bar-chart"></span> Charts<span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li <?php if($_GET['page'] == 'stats') { echo 'class="active"'; } ?> ><a href="index.php?page=stats&daterange=<?php echo $week['start'];?>+-+<?php echo $week['end'];?>"><span class="fa fa-bar-chart"></span> Delivery Chart</a></li>
